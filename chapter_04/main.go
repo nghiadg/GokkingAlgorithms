@@ -12,7 +12,7 @@ func quicksort(arr []int) []int {
 	less := []int{}
 	greater := []int{}
 
-	pivot := arr[0]
+	pivot := arr[(len(arr)-1)/2]
 
 	for _, v := range arr[1:] {
 		if v < pivot {
